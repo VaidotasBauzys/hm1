@@ -12,15 +12,15 @@ Java 12 - lower versions, not tested
 
 ## Building application
 
-```
 Goto project dir and run:
+```
 ./gradlew build
 ```
 
 ## Running application
 
-```
 In project dir run:
+```
 ./gradlew launch
 ```
 
@@ -53,14 +53,15 @@ Json:
 
 To fetch user information:
 ```
-localhost:4567/users/1012
-link: localhost:4567/account/add
+Get
+link: localhost:4567/users/1012
 ```
  
  To transfer amount (two users with initiated amount needed):
  ```
  POST
  link: localhost:4567/account/transfer
+ Json:
 {
     "fromUserId": "1012", 
     "toUserId": "1013", 
